@@ -1,3 +1,7 @@
 Two Sum,Easy
 Longest Substring Without Repeating Characters,Hard
 Binary Search,Medium
+Reverse Array,Easy
+Palindrome String,Easy
+Fibonacci Series,Easy
+Find Maximum Element in Array,Easy

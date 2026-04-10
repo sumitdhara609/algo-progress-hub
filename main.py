@@ -8,7 +8,7 @@ if not os.path.exists(DATA_FILE):
 
 def show_menu():
     print("\n" + "=" * 35)
-    print("         DSA TRACKER")
+    print("         ALGO PROGRESS HUB")
     print("=" * 35)
     print("1. Add Problem")
     print("2. View Problems")
@@ -133,7 +133,7 @@ def main():
         elif choice == "5":
             show_stats()
         elif choice == "6":
-            print("🔥 Stay consistent. See you in the next compile!")
+            print("🔥 Stay consistent. See you in the next compile!👋")
             break
         else:
             print("Invalid choice!")
