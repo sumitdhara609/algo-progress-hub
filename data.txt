@@ -1,1 +1,3 @@
 Two Sum,Easy
+Longest Substring Without Repeating Characters,Hard
+Binary Search,Medium

@@ -1,4 +1,9 @@
+import os
+
 DATA_FILE = "data.txt"
+
+if not os.path.exists(DATA_FILE):
+    open(DATA_FILE, "w").close()
 
 
 def show_menu():
@@ -20,7 +25,7 @@ def add_problem():
     with open(DATA_FILE, "a") as file:
         file.write(f"{name},{difficulty}\n")
 
-    print("✅ Problem added successfully!")
+    print("✅ Problem successfully saved to tracker!")
 
 
 def view_problems():
@@ -128,7 +133,7 @@ def main():
         elif choice == "5":
             show_stats()
         elif choice == "6":
-            print("👋 Keep coding. Goodbye!")
+            print("🔥 Stay consistent. See you in the next compile!")
             break
         else:
             print("Invalid choice!")
