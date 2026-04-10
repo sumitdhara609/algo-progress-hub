@@ -1,7 +1,8 @@
-Two Sum,Easy
-Longest Substring Without Repeating Characters,Hard
-Binary Search,Medium
-Reverse Array,Easy
-Palindrome String,Easy
-Fibonacci Series,Easy
-Find Maximum Element in Array,Easy
+Two Sum,Easy,Array,https://leetcode.com/problems/two-sum/
+Reverse Array,Easy,Array,Custom
+Palindrome String,Easy,String,Custom
+Fibonacci Series,Easy,Recursion,Custom
+Find Maximum Element in Array,Easy,Array,Custom
+Binary Search,Medium,Searching,https://leetcode.com/problems/binary-search/
+Longest Substring Without Repeating Characters,Hard,String,https://leetcode.com/problems/longest-substring-without-repeating-characters/
+Move Zeroes,Medium,Array,https://leetcode.com/problems/move-zeroes/

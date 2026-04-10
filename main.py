@@ -1,3 +1,5 @@
+from datetime import datetime
+
 import os
 
 DATA_FILE = "data.txt"
@@ -21,11 +23,14 @@ def show_menu():
 def add_problem():
     name = input("Enter problem name: ").strip()
     difficulty = input("Enter difficulty (Easy/Medium/Hard): ").strip().capitalize()
+    topic = input("Enter topic (Array/String/etc): ").strip().capitalize()
+    link = input("Enter problem link (or type Custom): ").strip()
 
     with open(DATA_FILE, "a") as file:
-        file.write(f"{name},{difficulty}\n")
+        file.write(f"{name},{difficulty},{topic},{link}\n")
 
-    print("✅ Problem successfully saved to tracker!")
+    print("✅ Problem successfully saved!")
+    update_streak()
 
 
 def view_problems():
@@ -37,12 +42,37 @@ def view_problems():
             print("No problems added yet.")
             return
 
-        print("\n📌 Your Problems:")
-        print("-" * 35)
+        easy, medium, hard = [], [], []
 
-        for i, line in enumerate(lines, 1):
-            name, difficulty = line.strip().split(",")
-            print(f"{i}. {name} [{difficulty}]")
+        for line in lines:
+            name, difficulty, topic, link = line.strip().split(",")
+
+            if difficulty == "Easy":
+                easy.append((name, topic, link))
+            elif difficulty == "Medium":
+                medium.append((name, topic, link))
+            elif difficulty == "Hard":
+                hard.append((name, topic, link))
+
+        print("\n📌 Your Problems:\n")
+
+        print("🟢 EASY")
+        print("-" * 40)
+        for i, (name, topic, link) in enumerate(easy, 1):
+            print(f"{i}. {name} ({topic})")
+            print(f"   🔗 {link}")
+
+        print("\n🟡 MEDIUM")
+        print("-" * 40)
+        for i, (name, topic, link) in enumerate(medium, 1):
+            print(f"{i}. {name} ({topic})")
+            print(f"   🔗 {link}")
+
+        print("\n🔴 HARD")
+        print("-" * 40)
+        for i, (name, topic, link) in enumerate(hard, 1):
+            print(f"{i}. {name} ({topic})")
+            print(f"   🔗 {link}")
 
     except FileNotFoundError:
         print("No data found.")
@@ -93,12 +123,18 @@ def delete_problem():
 
 
 def show_stats():
-    easy = medium = hard = 0
+    easy = medium = hard = total = 0
 
     try:
         with open(DATA_FILE, "r") as file:
             for line in file:
-                _, difficulty = line.strip().split(",")
+                parts = line.strip().split(",")
+
+                if len(parts) != 4:
+                    continue
+
+                _, difficulty, _, _ = parts
+                total += 1
 
                 if difficulty == "Easy":
                     easy += 1
@@ -108,15 +144,57 @@ def show_stats():
                     hard += 1
 
         print("\n📊 Your Progress Stats")
-        print("-" * 35)
+        print("-" * 40)
+        print(f"Total Problems Solved : {total}")
         print(f"Easy   : {easy}")
         print(f"Medium : {medium}")
         print(f"Hard   : {hard}")
 
+        # 🎯 Progress Goal
+        goal = 100
+        progress = (total / goal) * 100 if goal else 0
+        print(f"\n🎯 Progress towards {goal} problems: {progress:.2f}%")
+
+        # 🔥 Streak (correct placement)
+        try:
+            with open("streak.txt", "r") as file:
+                streak, _ = file.read().split(",")
+                print(f"\n🔥 Current Streak: {streak} days")
+        except:
+            print("\n🔥 Current Streak: 0 days")
+
     except FileNotFoundError:
         print("No data available.")
 
+def update_streak():
+    today = datetime.today().strftime("%Y-%m-%d")
 
+    try:
+        with open("streak.txt", "r") as file:
+            streak, last_date = file.read().split(",")
+
+        streak = int(streak)
+
+        if last_date == today:
+            return  # already counted today
+
+        last_date_obj = datetime.strptime(last_date, "%Y-%m-%d")
+        today_obj = datetime.strptime(today, "%Y-%m-%d")
+
+        difference = (today_obj - last_date_obj).days
+
+        if difference == 1:
+            streak += 1
+        elif difference > 1:
+            streak = 1  # reset streak
+        else:
+            return
+
+    except:
+        streak = 1  # first time
+
+    with open("streak.txt", "w") as file:
+        file.write(f"{streak},{today}")
 def main():
     while True:
         show_menu()
