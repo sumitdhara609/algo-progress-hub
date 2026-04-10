@@ -6,10 +6,14 @@ A modern command-line based system designed to help students and developers trac
 
 ## 🌍 Overview
 
-Consistency is the biggest challenge in mastering DSA.  
-**Algo Progress Hub** solves this by providing a simple yet structured CLI-based tracking system that helps users record progress, organize practice, and maintain discipline in problem-solving.
+Consistency is one of the biggest challenges in mastering Data Structures & Algorithms.
 
-This project is built with a focus on clarity, simplicity, and long-term learning improvement.
+**Algo Progress Hub** solves this problem by providing a simple yet effective CLI-based tracking system that helps users:
+- Record their progress
+- Organize practice problems
+- Build long-term coding discipline
+
+This project is designed with a focus on **clarity, simplicity, and consistent learning improvement**.
 
 ---
 
@@ -18,24 +22,26 @@ This project is built with a focus on clarity, simplicity, and long-term learnin
 - Build consistency in DSA practice
 - Track solved problems efficiently
 - Maintain a structured learning path
-- Encourage disciplined coding habits
+- Strengthen problem-solving discipline
 
 ---
 
 ## ⚙️ Features
 
-- 📌 Add and manage solved problems
-- 📊 Track overall progress
-- 🧠 Organized learning workflow
-- ⚡ Lightweight and fast CLI interface
-- 📁 Simple local data storage system
+- 📌 Add and manage DSA problems
+- 📋 View all stored problems
+- 🔍 Search problems by name
+- 🗑️ Delete completed/incorrect entries
+- 📊 Track progress by difficulty level (Easy / Medium / Hard)
+- 💾 Lightweight local file-based storage
+- ⚡ Fast and simple CLI interface
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python (Core Logic)
-- File Handling (Data Storage)
+- Python 🐍
+- File Handling (data storage using `.txt`)
 - Command Line Interface (CLI)
 
 ---
@@ -43,5 +49,6 @@ This project is built with a focus on clarity, simplicity, and long-term learnin
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
+
 ```bash
 git clone https://github.com/sumitdhara609/algo-progress-hub.git
