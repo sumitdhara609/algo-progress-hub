@@ -1,47 +1,61 @@
 # 🚀 Algo Progress Hub
 
-A modern command-line based system designed to help students and developers track their Data Structures & Algorithms (DSA) learning journey in a structured and consistent way.
+A powerful CLI-based DSA tracking system designed to help students build **consistency, discipline, and structured problem-solving skills**.
 
 ---
 
 ## 🌍 Overview
 
-Consistency is one of the biggest challenges in mastering Data Structures & Algorithms.
+Mastering Data Structures & Algorithms is not about solving random problems — it's about **consistent, structured practice**.
 
-**Algo Progress Hub** solves this problem by providing a simple yet effective CLI-based tracking system that helps users:
-- Record their progress
-- Organize practice problems
-- Build long-term coding discipline
+**Algo Progress Hub** is built to solve this.
 
-This project is designed with a focus on **clarity, simplicity, and consistent learning improvement**.
+It provides a clean and efficient way to:
+- Track solved problems
+- Organize them by difficulty & topic
+- Maintain a daily solving habit
+- Monitor progress like a real system
 
 ---
 
 ## 🎯 Key Objectives
 
-- Build consistency in DSA practice
-- Track solved problems efficiently
-- Maintain a structured learning path
-- Strengthen problem-solving discipline
+- 📈 Build long-term consistency in DSA
+- 🧠 Strengthen problem-solving skills
+- 🗂️ Maintain a structured learning path
+- 🔥 Develop a daily coding habit (streak-based)
 
 ---
 
 ## ⚙️ Features
 
-- 📌 Add and manage DSA problems
-- 📋 View all stored problems
-- 🔍 Search problems by name
-- 🗑️ Delete completed/incorrect entries
-- 📊 Track progress by difficulty level (Easy / Medium / Hard)
-- 💾 Lightweight local file-based storage
+- 📌 Add problems with **difficulty, topic & link**
+- 📋 View problems grouped by **Easy / Medium / Hard**
+- 🔍 Search problems instantly
+- 🗑️ Delete incorrect or unwanted entries
+- 📊 Detailed progress statistics
+- 🎯 Progress tracking towards a goal (e.g., 100 problems)
+- 🔥 Daily streak tracking system (habit builder)
+- 💾 Lightweight file-based storage
 - ⚡ Fast and simple CLI interface
+
+---
+
+## 🧠 How It Works (Real-World Usage)
+
+1. Solve a problem (e.g., LeetCode)
+2. Add it to the tracker
+3. Track your progress & streak
+4. Stay consistent daily
+
+👉 This mimics how serious developers prepare for interviews.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python 🐍
-- File Handling (data storage using `.txt`)
+- **Python 🐍**
+- File Handling (`.txt` storage)
 - Command Line Interface (CLI)
 
 ---
@@ -49,6 +63,5 @@ This project is designed with a focus on **clarity, simplicity, and consistent l
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
-
 ```bash
 git clone https://github.com/sumitdhara609/algo-progress-hub.git
