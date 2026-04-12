@@ -6,3 +6,13 @@ Find Maximum Element in Array,Easy,Array,Custom
 Binary Search,Medium,Searching,https://leetcode.com/problems/binary-search/
 Longest Substring Without Repeating Characters,Hard,String,https://leetcode.com/problems/longest-substring-without-repeating-characters/
 Move Zeroes,Medium,Array,https://leetcode.com/problems/move-zeroes/
+Valid Palindrome,Easy,String,https://leetcode.com/problems/valid-palindrome/
+Merge Sorted Array,Easy,Array,https://leetcode.com/problems/merge-sorted-array/
+Contains Duplicate,Easy,Array,https://leetcode.com/problems/contains-duplicate/
+Single Number,Easy,Array,https://leetcode.com/problems/single-number/
+Container With Most Water,Medium,Array,https://leetcode.com/problems/container-with-most-water/
+3Sum,Medium,Array,https://leetcode.com/problems/3sum/
+Product of Array Except Self,Medium,Array,https://leetcode.com/problems/product-of-array-except-self/
+Valid Parentheses,Medium,Stack,https://leetcode.com/problems/valid-parentheses/
+Trapping Rain Water,Hard,Array,https://leetcode.com/problems/trapping-rain-water/
+Merge Intervals,Hard,Array,https://leetcode.com/problems/merge-intervals/
