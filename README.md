@@ -2,6 +2,8 @@
 
 A powerful CLI-based system to **track, organize, and improve your Data Structures & Algorithms journey** through consistent problem solving.
 
+> 💡 Built during my high school years as a step toward developing strong problem-solving discipline early.
+
 ---
 
 ## 🌍 Overview
@@ -75,36 +77,4 @@ git clone https://github.com/sumitdhara609/algo-progress-hub.git
 cd algo-progress-hub
 
 # Run the program
-python main.pyclone https://github.com/sumitdhara609/algo-progress-hub.git
-
-
----
-
-### 🌟 Why This Project?
-
-Most students solve problems randomly and lose track of their progress.
-
-**Algo Progress Hub solves that by turning practice into a structured system**, helping you:
-
-- Stay organized  
-- Stay consistent  
-- See real improvement over time  
-
----
-
-### 📌 Future Improvements
-
-- 🎯 Filter problems by status (Solved / Unsolved)  
-- 🧠 Pattern-based recommendations  
-- 📊 Advanced analytics dashboard  
-- 🖥️ GUI version  
-
----
-
-### 👤 Author & License
-
-**Author:** Sumit Dhara  
-
-This project is open-source and available under the **MIT License**.
-
-© 2026 Sumit Dhara. All rights reserved.
+python main.py
