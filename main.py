@@ -1,17 +1,21 @@
 from datetime import datetime
-
 import os
 
 DATA_FILE = "data.txt"
+STREAK_FILE = "streak.txt"
 
 if not os.path.exists(DATA_FILE):
     open(DATA_FILE, "w").close()
 
+if not os.path.exists(STREAK_FILE):
+    with open(STREAK_FILE, "w") as f:
+        f.write("0,2000-01-01")
+
 
 def show_menu():
-    print("\n" + "=" * 35)
-    print("         ALGO PROGRESS HUB")
-    print("=" * 35)
+    print("\n" + "=" * 40)
+    print("        🚀 ALGO PROGRESS HUB")
+    print("=" * 40)
     print("1. Add Problem")
     print("2. View Problems")
     print("3. Search Problem")
@@ -24,12 +28,14 @@ def add_problem():
     name = input("Enter problem name: ").strip()
     difficulty = input("Enter difficulty (Easy/Medium/Hard): ").strip().capitalize()
     topic = input("Enter topic (Array/String/etc): ").strip().capitalize()
-    link = input("Enter problem link (or type Custom): ").strip()
+    pattern = input("Enter pattern (Hashing/DP/etc): ").strip().capitalize()
+    status = input("Enter status (Solved/Revision/Unsolved): ").strip().capitalize()
+    link = input("Enter problem link: ").strip()
 
     with open(DATA_FILE, "a") as file:
-        file.write(f"{name},{difficulty},{topic},{link}\n")
+        file.write(f"{name},{difficulty},{topic},{pattern},{status},{link}\n")
 
-    print("✅ Problem successfully saved!")
+    print("✅ Problem added successfully!")
     update_streak()
 
 
@@ -45,34 +51,34 @@ def view_problems():
         easy, medium, hard = [], [], []
 
         for line in lines:
-            name, difficulty, topic, link = line.strip().split(",")
+            parts = line.strip().split(",")
+
+            if len(parts) < 6:
+                continue
+
+            name, difficulty, topic, pattern, status, link = parts
+            data = (name, topic, pattern, status, link)
 
             if difficulty == "Easy":
-                easy.append((name, topic, link))
+                easy.append(data)
             elif difficulty == "Medium":
-                medium.append((name, topic, link))
+                medium.append(data)
             elif difficulty == "Hard":
-                hard.append((name, topic, link))
+                hard.append(data)
 
-        print("\n📌 Your Problems:\n")
+        print("\n📌 DSA Progress Dashboard\n")
 
-        print("🟢 EASY")
-        print("-" * 40)
-        for i, (name, topic, link) in enumerate(easy, 1):
-            print(f"{i}. {name} ({topic})")
-            print(f"   🔗 {link}")
+        def print_section(title, problems):
+            print(title)
+            print("-" * 50)
+            for i, (name, topic, pattern, status, link) in enumerate(problems, 1):
+                print(f"{i}. {name}")
+                print(f"   📂 {topic} | 🧠 {pattern} | 📌 {status}")
+                print(f"   🔗 {link}")
 
-        print("\n🟡 MEDIUM")
-        print("-" * 40)
-        for i, (name, topic, link) in enumerate(medium, 1):
-            print(f"{i}. {name} ({topic})")
-            print(f"   🔗 {link}")
-
-        print("\n🔴 HARD")
-        print("-" * 40)
-        for i, (name, topic, link) in enumerate(hard, 1):
-            print(f"{i}. {name} ({topic})")
-            print(f"   🔗 {link}")
+        print_section("🟢 EASY", easy)
+        print_section("\n🟡 MEDIUM", medium)
+        print_section("\n🔴 HARD", hard)
 
     except FileNotFoundError:
         print("No data found.")
@@ -83,29 +89,44 @@ def search_problem():
 
     try:
         with open(DATA_FILE, "r") as file:
-            found = False
-
             for line in file:
-                name, difficulty = line.strip().split(",")
+                parts = line.strip().split(",")
+
+                if len(parts) < 6:
+                    continue
+
+                name, difficulty, topic, pattern, status, link = parts
 
                 if keyword in name.lower():
-                    print(f"Found: {name} [{difficulty}]")
-                    found = True
+                    print(f"\nFound: {name}")
+                    print(f"Difficulty: {difficulty}")
+                    print(f"Topic: {topic}")
+                    print(f"Pattern: {pattern}")
+                    print(f"Status: {status}")
+                    print(f"Link: {link}")
+                    return
 
-            if not found:
-                print("No matching problem found.")
+        print("No matching problem found.")
 
     except FileNotFoundError:
         print("No data found.")
 
 
 def delete_problem():
-    view_problems()
-
     try:
-        index = int(input("\nEnter problem number to delete: "))
         with open(DATA_FILE, "r") as file:
             lines = file.readlines()
+
+        if not lines:
+            print("No problems to delete.")
+            return
+
+        for i, line in enumerate(lines, 1):
+            parts = line.strip().split(",")
+            if len(parts) >= 1:
+                print(f"{i}. {parts[0]}")
+
+        index = int(input("\nEnter problem number to delete: "))
 
         if 1 <= index <= len(lines):
             removed = lines.pop(index - 1)
@@ -113,7 +134,7 @@ def delete_problem():
             with open(DATA_FILE, "w") as file:
                 file.writelines(lines)
 
-            name, _ = removed.strip().split(",")
+            name = removed.strip().split(",")[0]
             print(f"🗑️ Deleted: {name}")
         else:
             print("Invalid number!")
@@ -130,10 +151,10 @@ def show_stats():
             for line in file:
                 parts = line.strip().split(",")
 
-                if len(parts) != 4:
+                if len(parts) < 6:
                     continue
 
-                _, difficulty, _, _ = parts
+                _, difficulty, _, _, _, _ = parts
                 total += 1
 
                 if difficulty == "Easy":
@@ -150,14 +171,12 @@ def show_stats():
         print(f"Medium : {medium}")
         print(f"Hard   : {hard}")
 
-        # 🎯 Progress Goal
         goal = 100
         progress = (total / goal) * 100 if goal else 0
         print(f"\n🎯 Progress towards {goal} problems: {progress:.2f}%")
 
-        # 🔥 Streak (correct placement)
         try:
-            with open("streak.txt", "r") as file:
+            with open(STREAK_FILE, "r") as file:
                 streak, _ = file.read().split(",")
                 print(f"\n🔥 Current Streak: {streak} days")
         except:
@@ -166,35 +185,36 @@ def show_stats():
     except FileNotFoundError:
         print("No data available.")
 
+
 def update_streak():
     today = datetime.today().strftime("%Y-%m-%d")
 
     try:
-        with open("streak.txt", "r") as file:
+        with open(STREAK_FILE, "r") as file:
             streak, last_date = file.read().split(",")
 
         streak = int(streak)
 
         if last_date == today:
-            return  # already counted today
+            return
 
         last_date_obj = datetime.strptime(last_date, "%Y-%m-%d")
         today_obj = datetime.strptime(today, "%Y-%m-%d")
 
-        difference = (today_obj - last_date_obj).days
+        diff = (today_obj - last_date_obj).days
 
-        if difference == 1:
+        if diff == 1:
             streak += 1
-        elif difference > 1:
-            streak = 1  # reset streak
-        else:
-            return
+        elif diff > 1:
+            streak = 1
 
     except:
-        streak = 1  # first time
+        streak = 1
 
-    with open("streak.txt", "w") as file:
+    with open(STREAK_FILE, "w") as file:
         file.write(f"{streak},{today}")
+
+
 def main():
     while True:
         show_menu()
@@ -211,7 +231,7 @@ def main():
         elif choice == "5":
             show_stats()
         elif choice == "6":
-            print("🔥 Stay consistent. See you in the next compile!👋")
+            print("🔥 Stay consistent. See you in the next compile! 👋")
             break
         else:
             print("Invalid choice!")

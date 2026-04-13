@@ -1,18 +1,18 @@
-Two Sum,Easy,Array,https://leetcode.com/problems/two-sum/
-Reverse Array,Easy,Array,Custom
-Palindrome String,Easy,String,Custom
-Fibonacci Series,Easy,Recursion,Custom
-Find Maximum Element in Array,Easy,Array,Custom
-Binary Search,Medium,Searching,https://leetcode.com/problems/binary-search/
-Longest Substring Without Repeating Characters,Hard,String,https://leetcode.com/problems/longest-substring-without-repeating-characters/
-Move Zeroes,Medium,Array,https://leetcode.com/problems/move-zeroes/
-Valid Palindrome,Easy,String,https://leetcode.com/problems/valid-palindrome/
-Merge Sorted Array,Easy,Array,https://leetcode.com/problems/merge-sorted-array/
-Contains Duplicate,Easy,Array,https://leetcode.com/problems/contains-duplicate/
-Single Number,Easy,Array,https://leetcode.com/problems/single-number/
-Container With Most Water,Medium,Array,https://leetcode.com/problems/container-with-most-water/
-3Sum,Medium,Array,https://leetcode.com/problems/3sum/
-Product of Array Except Self,Medium,Array,https://leetcode.com/problems/product-of-array-except-self/
-Valid Parentheses,Medium,Stack,https://leetcode.com/problems/valid-parentheses/
-Trapping Rain Water,Hard,Array,https://leetcode.com/problems/trapping-rain-water/
-Merge Intervals,Hard,Array,https://leetcode.com/problems/merge-intervals/
+Two Sum,Easy,Array,Hashing,Solved,https://leetcode.com/problems/two-sum/
+Reverse Array,Easy,Array,Basic,Solved,Custom
+Palindrome String,Easy,String,Two Pointer,Solved,Custom
+Fibonacci Series,Easy,Recursion,Recursion,Solved,Custom
+Find Maximum Element in Array,Easy,Array,Basic,Solved,Custom
+Binary Search,Medium,Searching,Binary Search,Solved,https://leetcode.com/problems/binary-search/
+Longest Substring Without Repeating Characters,Hard,String,Sliding Window,Revision,https://leetcode.com/problems/longest-substring-without-repeating-characters/
+Move Zeroes,Medium,Array,Two Pointer,Solved,https://leetcode.com/problems/move-zeroes/
+Valid Palindrome,Easy,String,Two Pointer,Solved,https://leetcode.com/problems/valid-palindrome/
+Merge Sorted Array,Easy,Array,Two Pointer,Solved,https://leetcode.com/problems/merge-sorted-array/
+Contains Duplicate,Easy,Array,Hashing,Solved,https://leetcode.com/problems/contains-duplicate/
+Single Number,Easy,Array,Bit Manipulation,Solved,https://leetcode.com/problems/single-number/
+Container With Most Water,Medium,Array,Two Pointer,Revision,https://leetcode.com/problems/container-with-most-water/
+3Sum,Medium,Array,Two Pointer,Revision,https://leetcode.com/problems/3sum/
+Product of Array Except Self,Medium,Array,Prefix Sum,Revision,https://leetcode.com/problems/product-of-array-except-self/
+Valid Parentheses,Medium,Stack,Stack,Solved,https://leetcode.com/problems/valid-parentheses/
+Trapping Rain Water,Hard,Array,Two Pointer,Unsolved,https://leetcode.com/problems/trapping-rain-water/
+Merge Intervals,Hard,Array,Greedy,Unsolved,https://leetcode.com/problems/merge-intervals/
