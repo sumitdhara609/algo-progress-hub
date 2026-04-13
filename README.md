@@ -69,12 +69,6 @@ Mastering Data Structures & Algorithms isn’t about solving random problems —
 
 ## 🚀 Getting Started
 
+### 1. Clone the repository
 ```bash
-# Clone the repository
 git clone https://github.com/sumitdhara609/algo-progress-hub.git
-
-# Navigate into the project folder
-cd algo-progress-hub
-
-# Run the program
-python main.py
