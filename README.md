@@ -72,3 +72,50 @@ Mastering Data Structures & Algorithms isn’t about solving random problems —
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/sumitdhara609/algo-progress-hub.git
+```
+### 2. Navigate into the project folder
+```bash
+cd algo-progress-hub
+```
+### 3. Run the program
+```bash
+python main.py
+```
+
+---
+
+# 📂 Additional Information
+## 📄 Data Format
+
+Each problem is stored in the following structure:
+```bash
+Name, Difficulty, Topic, Pattern, Status, Link
+```
+Example:
+```bash
+Trapping Rain Water,Hard,Array,Two Pointer,Unsolved,https://leetcode.com/problems/trapping-rain-water/
+```
+## 🌟 Why This Project?
+
+Most students solve problems randomly and lose track of their progress.
+
+### Algo Progress Hub solves that by turning practice into a structured system, helping you:
+
+- Stay organized
+- Stay consistent
+- See real improvement over time
+
+## 📌 Future Improvements
+
+- 🎯 Filter problems by status
+- 🧠 Pattern-based recommendations
+- 📊 Advanced analytics dashboard
+- 🖥️ GUI version
+
+## 👤 Author & License
+
+**Author:** Sumit Dhara
+
+This project is open-source under the  **MIT License.**
+
+#### © 2026 Sumit Dhara. All rights reserved.
