@@ -1,67 +1,110 @@
 # 🚀 Algo Progress Hub
 
-A powerful CLI-based DSA tracking system designed to help students build **consistency, discipline, and structured problem-solving skills**.
+A powerful CLI-based system to **track, organize, and improve your Data Structures & Algorithms journey** through consistent problem solving.
 
 ---
 
 ## 🌍 Overview
 
-Mastering Data Structures & Algorithms is not about solving random problems — it's about **consistent, structured practice**.
+Mastering Data Structures & Algorithms isn’t about solving random problems — it’s about **structured practice and consistency over time**.
 
-**Algo Progress Hub** is built to solve this.
+**Algo Progress Hub** is designed to act as your personal DSA companion by helping you:
 
-It provides a clean and efficient way to:
-- Track solved problems
-- Organize them by difficulty & topic
-- Maintain a daily solving habit
-- Monitor progress like a real system
+- Track solved problems efficiently  
+- Organize them by difficulty, topic, and pattern  
+- Maintain a consistent daily practice habit  
+- Monitor your growth with meaningful insights  
 
 ---
 
 ## 🎯 Key Objectives
 
-- 📈 Build long-term consistency in DSA
-- 🧠 Strengthen problem-solving skills
-- 🗂️ Maintain a structured learning path
-- 🔥 Develop a daily coding habit (streak-based)
+- 📈 Build long-term consistency in DSA practice  
+- 🧠 Strengthen problem-solving and pattern recognition  
+- 🗂️ Maintain a structured and organized learning path  
+- 🔥 Develop a strong daily coding habit  
 
 ---
 
 ## ⚙️ Features
 
-- 📌 Add problems with **difficulty, topic & link**
-- 📋 View problems grouped by **Easy / Medium / Hard**
-- 🔍 Search problems instantly
-- 🗑️ Delete incorrect or unwanted entries
-- 📊 Detailed progress statistics
-- 🎯 Progress tracking towards a goal (e.g., 100 problems)
-- 🔥 Daily streak tracking system (habit builder)
-- 💾 Lightweight file-based storage
-- ⚡ Fast and simple CLI interface
+- 📌 Add problems with:
+  - Difficulty (Easy / Medium / Hard)  
+  - Topic (Array, String, etc.)  
+  - Pattern (Two Pointer, DP, Hashing, etc.)  
+  - Status (Solved / Revision / Unsolved)  
+  - Problem link  
+
+- 📋 View problems in a clean **DSA Progress Dashboard**  
+- 🔍 Search problems instantly  
+- 🗑️ Delete unwanted or incorrect entries  
+- 📊 Track progress with detailed statistics  
+- 🎯 Set and monitor progress goals (e.g., 100 problems)  
+- 🔥 Daily streak tracking system for habit building  
+- 💾 Lightweight file-based storage  
+- ⚡ Fast and minimal CLI experience  
 
 ---
 
-## 🧠 How It Works (Real-World Usage)
+## 🧠 How It Works
 
-1. Solve a problem (e.g., LeetCode)
-2. Add it to the tracker
-3. Track your progress & streak
-4. Stay consistent daily
+1. Solve a problem from any platform (e.g., LeetCode)  
+2. Add it to the tracker with details  
+3. Track your progress and patterns  
+4. Stay consistent and improve daily  
 
-👉 This mimics how serious developers prepare for interviews.
+👉 This system helps you **learn smarter, not just harder**
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Python 🐍**
-- File Handling (`.txt` storage)
-- Command Line Interface (CLI)
+- **Python 🐍**  
+- File Handling (`.txt` storage)  
+- Command Line Interface (CLI)  
 
 ---
 
 ## 🚀 Getting Started
 
-### 1. Clone the repository
 ```bash
+# Clone the repository
 git clone https://github.com/sumitdhara609/algo-progress-hub.git
+
+# Navigate into the project folder
+cd algo-progress-hub
+
+# Run the program
+python main.pyclone https://github.com/sumitdhara609/algo-progress-hub.git
+
+
+---
+
+### 🌟 Why This Project?
+
+Most students solve problems randomly and lose track of their progress.
+
+**Algo Progress Hub solves that by turning practice into a structured system**, helping you:
+
+- Stay organized  
+- Stay consistent  
+- See real improvement over time  
+
+---
+
+### 📌 Future Improvements
+
+- 🎯 Filter problems by status (Solved / Unsolved)  
+- 🧠 Pattern-based recommendations  
+- 📊 Advanced analytics dashboard  
+- 🖥️ GUI version  
+
+---
+
+### 👤 Author & License
+
+**Author:** Sumit Dhara  
+
+This project is open-source and available under the **MIT License**.
+
+© 2026 Sumit Dhara. All rights reserved.
