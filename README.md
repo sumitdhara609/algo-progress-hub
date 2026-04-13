@@ -2,7 +2,7 @@
 
 A powerful CLI-based system to **track, organize, and improve your Data Structures & Algorithms journey** through consistent problem solving.
 
-> > 💡 Built while I am still in high school, as part of developing strong problem-solving discipline early.
+> 💡 Built while I am still in high school, as part of developing strong problem-solving discipline early.
 
 ---
 
