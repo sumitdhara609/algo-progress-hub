@@ -2,7 +2,7 @@
 
 A powerful CLI-based system to **track, organize, and improve your Data Structures & Algorithms journey** through consistent problem solving.
 
-> 💡 Built while I am still in high school, as part of developing strong problem-solving discipline early.
+> 💡 Built during high school to develop strong problem-solving discipline and consistency early.
 
 ---
 
@@ -43,7 +43,7 @@ Mastering Data Structures & Algorithms isn’t about solving random problems —
 - 📊 Track progress with detailed statistics  
 - 🎯 Set and monitor progress goals (e.g., 100 problems)  
 - 🔥 Daily streak tracking system for habit building  
-- 💾 Lightweight file-based storage  
+- 💾 JSON-based structured storage  
 - ⚡ Fast and minimal CLI experience  
 
 ---
@@ -62,8 +62,8 @@ Mastering Data Structures & Algorithms isn’t about solving random problems —
 ## 🛠️ Tech Stack
 
 - **Python 🐍**  
-- File Handling (`.txt` storage)  
-- Command Line Interface (CLI)  
+- JSON-based storage
+- Command Line Interface (CLI) 
 
 ---
 
@@ -84,16 +84,42 @@ python main.py
 
 ---
 
+## 💻 CLI Usage
+```bash
+Enter choice: 1  → Add Problem
+Enter choice: 2  → View Dashboard
+Enter choice: 3  → Search Problem
+Enter choice: 4  → Delete Problem
+Enter choice: 5  → View Stats
+Enter choice: 6  → Exit
+```
+
+---
+
 # 📂 Additional Information
 ## 📄 Data Format
 
-Each problem is stored in the following structure:
-```bash
-Name, Difficulty, Topic, Pattern, Status, Link
+Each problem is stored in structured JSON format:
+```json
+{
+"name": "string",
+"difficulty": "Easy | Medium | Hard",
+"topic": "string",
+"pattern": "string",
+"status": "Solved | Revision | Unsolved",
+"link": "string"
+}
 ```
 Example:
-```bash
-Trapping Rain Water,Hard,Array,Two Pointer,Unsolved,https://leetcode.com/problems/trapping-rain-water/
+```json
+{
+"name": "Trapping Rain Water",
+"difficulty": "Hard",
+"topic": "Array",
+"pattern": "Two Pointer",
+"status": "Unsolved",
+"link": "https://leetcode.com/problems/trapping-rain-water/"
+}
 ```
 ## 🌟 Why This Project?
 
@@ -107,10 +133,10 @@ Most students solve problems randomly and lose track of their progress.
 
 ## 📌 Future Improvements
 
-- 🎯 Filter problems by status
-- 🧠 Pattern-based recommendations
-- 📊 Advanced analytics dashboard
-- 🖥️ GUI version
+- ⚡ CLI commands using argparse
+- 🌐 Web dashboard (Flask / React)
+- 📊 Graph-based analytics
+- 🔗 LeetCode API integration
 
 ## 👤 Author & License
 
