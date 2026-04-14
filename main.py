@@ -4,8 +4,10 @@ import json
 
 DATA_FILE = "data.json"
 STREAK_FILE = "streak.txt"
+GOAL_FILE = "goal.json"
 
-# Ensure files exist
+# ------------------ FILE SETUP ------------------
+
 if not os.path.exists(DATA_FILE):
     with open(DATA_FILE, "w") as f:
         json.dump([], f)
@@ -13,6 +15,10 @@ if not os.path.exists(DATA_FILE):
 if not os.path.exists(STREAK_FILE):
     with open(STREAK_FILE, "w") as f:
         f.write("0,2000-01-01")
+
+if not os.path.exists(GOAL_FILE):
+    with open(GOAL_FILE, "w") as f:
+        json.dump({"daily_goal": 3, "last_updated": "", "today_count": 0}, f)
 
 
 # ------------------ JSON HELPERS ------------------
@@ -30,6 +36,16 @@ def save_data(data):
         json.dump(data, file, indent=4)
 
 
+def load_goal():
+    with open(GOAL_FILE, "r") as f:
+        return json.load(f)
+
+
+def save_goal(goal):
+    with open(GOAL_FILE, "w") as f:
+        json.dump(goal, f, indent=4)
+
+
 # ------------------ MENU ------------------
 
 def show_menu():
@@ -41,7 +57,8 @@ def show_menu():
     print("3. Search Problem")
     print("4. Delete Problem")
     print("5. Show Stats")
-    print("6. Exit")
+    print("6. Set Daily Goal")
+    print("7. Exit")
 
 
 # ------------------ ADD ------------------
@@ -69,6 +86,17 @@ def add_problem():
 
     print("✅ Problem added successfully!")
     update_streak()
+
+    # -------- GOAL UPDATE --------
+    goal = load_goal()
+    today = datetime.today().strftime("%Y-%m-%d")
+
+    if goal["last_updated"] != today:
+        goal["today_count"] = 0
+        goal["last_updated"] = today
+
+    goal["today_count"] += 1
+    save_goal(goal)
 
 
 # ------------------ VIEW ------------------
@@ -111,7 +139,6 @@ def view_problems():
 
 def search_problem():
     keyword = input("Enter problem name to search: ").lower()
-
     data = load_data()
 
     for p in data:
@@ -176,16 +203,45 @@ def show_stats():
     print(f"Medium : {medium}")
     print(f"Hard   : {hard}")
 
-    goal = 100
-    progress = (total / goal) * 100 if goal else 0
-    print(f"\n🎯 Progress towards {goal}: {progress:.2f}%")
+    goal_target = 100
+    progress = (total / goal_target) * 100 if goal_target else 0
+    print(f"\n🎯 Progress towards {goal_target}: {progress:.2f}%")
 
+    # -------- STREAK --------
     try:
         with open(STREAK_FILE, "r") as file:
             streak, _ = file.read().split(",")
             print(f"\n🔥 Current Streak: {streak} days")
     except:
         print("\n🔥 Current Streak: 0 days")
+
+    # -------- DAILY GOAL --------
+    goal = load_goal()
+
+    print("\n🎯 Daily Goal Progress")
+    print("-" * 40)
+    print(f"Goal: {goal['daily_goal']} problems/day")
+    print(f"Completed Today: {goal['today_count']}")
+
+    if goal["today_count"] >= goal["daily_goal"]:
+        print("✅ Goal Completed Today!")
+    else:
+        remaining = goal["daily_goal"] - goal["today_count"]
+        print(f"⏳ {remaining} more to go!")
+
+
+# ------------------ SET GOAL ------------------
+
+def set_goal():
+    goal = load_goal()
+
+    try:
+        new_goal = int(input("Enter daily problem goal: "))
+        goal["daily_goal"] = new_goal
+        save_goal(goal)
+        print("🎯 Daily goal updated!")
+    except:
+        print("Invalid input!")
 
 
 # ------------------ STREAK ------------------
@@ -237,6 +293,8 @@ def main():
         elif choice == "5":
             show_stats()
         elif choice == "6":
+            set_goal()
+        elif choice == "7":
             print("🔥 Stay consistent. See you in the next compile! 👋")
             break
         else:
