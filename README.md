@@ -41,8 +41,9 @@ Mastering Data Structures & Algorithms isn’t about solving random problems —
 - 🔍 Search problems instantly  
 - 🗑️ Delete unwanted or incorrect entries  
 - 📊 Track progress with detailed statistics  
-- 🎯 Set and monitor progress goals (e.g., 100 problems)  
-- 🔥 Daily streak tracking system for habit building  
+- 🎯 Set and monitor progress goals (e.g., 100 problems) 
+- 🔥 Daily streak tracking system for habit building
+- 🎯 Daily goal tracking system
 - 💾 JSON-based structured storage  
 - ⚡ Fast and minimal CLI experience  
 
@@ -91,7 +92,8 @@ Enter choice: 2  → View Dashboard
 Enter choice: 3  → Search Problem
 Enter choice: 4  → Delete Problem
 Enter choice: 5  → View Stats
-Enter choice: 6  → Exit
+Enter choice: 6 → Set Daily Goal
+Enter choice: 7 → Exit
 ```
 
 ---
