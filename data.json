@@ -1,0 +1,290 @@
+[
+    {
+        "name": "Two Sum",
+        "difficulty": "Easy",
+        "topic": "Array",
+        "pattern": "Hashing",
+        "status": "Solved",
+        "link": "https://leetcode.com/problems/two-sum/"
+    },
+    {
+        "name": "Reverse Array",
+        "difficulty": "Easy",
+        "topic": "Array",
+        "pattern": "Basic",
+        "status": "Solved",
+        "link": "Custom"
+    },
+    {
+        "name": "Palindrome String",
+        "difficulty": "Easy",
+        "topic": "String",
+        "pattern": "Two Pointer",
+        "status": "Solved",
+        "link": "Custom"
+    },
+    {
+        "name": "Fibonacci Series",
+        "difficulty": "Easy",
+        "topic": "Recursion",
+        "pattern": "Recursion",
+        "status": "Solved",
+        "link": "Custom"
+    },
+    {
+        "name": "Find Maximum Element in Array",
+        "difficulty": "Easy",
+        "topic": "Array",
+        "pattern": "Basic",
+        "status": "Solved",
+        "link": "Custom"
+    },
+    {
+        "name": "Binary Search",
+        "difficulty": "Medium",
+        "topic": "Searching",
+        "pattern": "Binary Search",
+        "status": "Solved",
+        "link": "https://leetcode.com/problems/binary-search/"
+    },
+    {
+        "name": "Longest Substring Without Repeating Characters",
+        "difficulty": "Hard",
+        "topic": "String",
+        "pattern": "Sliding Window",
+        "status": "Revision",
+        "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+    },
+    {
+        "name": "Move Zeroes",
+        "difficulty": "Medium",
+        "topic": "Array",
+        "pattern": "Two Pointer",
+        "status": "Solved",
+        "link": "https://leetcode.com/problems/move-zeroes/"
+    },
+    {
+        "name": "Valid Palindrome",
+        "difficulty": "Easy",
+        "topic": "String",
+        "pattern": "Two Pointer",
+        "status": "Solved",
+        "link": "https://leetcode.com/problems/valid-palindrome/"
+    },
+    {
+        "name": "Merge Sorted Array",
+        "difficulty": "Easy",
+        "topic": "Array",
+        "pattern": "Two Pointer",
+        "status": "Solved",
+        "link": "https://leetcode.com/problems/merge-sorted-array/"
+    },
+    {
+        "name": "Contains Duplicate",
+        "difficulty": "Easy",
+        "topic": "Array",
+        "pattern": "Hashing",
+        "status": "Solved",
+        "link": "https://leetcode.com/problems/contains-duplicate/"
+    },
+    {
+        "name": "Single Number",
+        "difficulty": "Easy",
+        "topic": "Array",
+        "pattern": "Bit Manipulation",
+        "status": "Solved",
+        "link": "https://leetcode.com/problems/single-number/"
+    },
+    {
+        "name": "Container With Most Water",
+        "difficulty": "Medium",
+        "topic": "Array",
+        "pattern": "Two Pointer",
+        "status": "Revision",
+        "link": "https://leetcode.com/problems/container-with-most-water/"
+    },
+    {
+        "name": "3Sum",
+        "difficulty": "Medium",
+        "topic": "Array",
+        "pattern": "Two Pointer",
+        "status": "Revision",
+        "link": "https://leetcode.com/problems/3sum/"
+    },
+    {
+        "name": "Product of Array Except Self",
+        "difficulty": "Medium",
+        "topic": "Array",
+        "pattern": "Prefix Sum",
+        "status": "Revision",
+        "link": "https://leetcode.com/problems/product-of-array-except-self/"
+    },
+    {
+        "name": "Valid Parentheses",
+        "difficulty": "Medium",
+        "topic": "Stack",
+        "pattern": "Stack",
+        "status": "Solved",
+        "link": "https://leetcode.com/problems/valid-parentheses/"
+    },
+    {
+        "name": "Trapping Rain Water",
+        "difficulty": "Hard",
+        "topic": "Array",
+        "pattern": "Two Pointer",
+        "status": "Unsolved",
+        "link": "https://leetcode.com/problems/trapping-rain-water/"
+    },
+    {
+        "name": "Merge Intervals",
+        "difficulty": "Hard",
+        "topic": "Array",
+        "pattern": "Greedy",
+        "status": "Unsolved",
+        "link": "https://leetcode.com/problems/merge-intervals/"
+    },
+    {
+        "name": "Kadane's Algorithm",
+        "difficulty": "Medium",
+        "topic": "Array",
+        "pattern": "Prefix Sum",
+        "status": "Solved",
+        "link": "Custom"
+    },
+    {
+        "name": "Maximum Subarray",
+        "difficulty": "Medium",
+        "topic": "Array",
+        "pattern": "Kadane",
+        "status": "Solved",
+        "link": "https://leetcode.com/problems/maximum-subarray/"
+    },
+    {
+        "name": "House Robber",
+        "difficulty": "Medium",
+        "topic": "Dynamic Programming",
+        "pattern": "DP",
+        "status": "Unsolved",
+        "link": "https://leetcode.com/problems/house-robber/"
+    },
+    {
+        "name": "Coin Change",
+        "difficulty": "Medium",
+        "topic": "Dynamic Programming",
+        "pattern": "DP",
+        "status": "Unsolved",
+        "link": "https://leetcode.com/problems/coin-change/"
+    },
+    {
+        "name": "Minimum Window Substring",
+        "difficulty": "Hard",
+        "topic": "String",
+        "pattern": "Sliding Window",
+        "status": "Unsolved",
+        "link": "https://leetcode.com/problems/minimum-window-substring/"
+    },
+    {
+        "name": "Jump Game",
+        "difficulty": "Medium",
+        "topic": "Array",
+        "pattern": "Greedy",
+        "status": "Unsolved",
+        "link": "https://leetcode.com/problems/jump-game/"
+    },
+    {
+        "name": "Jump Game II",
+        "difficulty": "Medium",
+        "topic": "Array",
+        "pattern": "Greedy",
+        "status": "Unsolved",
+        "link": "https://leetcode.com/problems/jump-game-ii/"
+    },
+    {
+        "name": "Daily Temperatures",
+        "difficulty": "Medium",
+        "topic": "Stack",
+        "pattern": "Monotonic Stack",
+        "status": "Unsolved",
+        "link": "https://leetcode.com/problems/daily-temperatures/"
+    },
+    {
+        "name": "Largest Rectangle in Histogram",
+        "difficulty": "Hard",
+        "topic": "Stack",
+        "pattern": "Monotonic Stack",
+        "status": "Unsolved",
+        "link": "https://leetcode.com/problems/largest-rectangle-in-histogram/"
+    },
+    {
+        "name": "Longest Increasing Subsequence",
+        "difficulty": "Medium",
+        "topic": "Dynamic Programming",
+        "pattern": "DP",
+        "status": "Unsolved",
+        "link": "https://leetcode.com/problems/longest-increasing-subsequence/"
+    },
+    {
+        "name": "Number of Islands",
+        "difficulty": "Medium",
+        "topic": "Graph",
+        "pattern": "DFS",
+        "status": "Unsolved",
+        "link": "https://leetcode.com/problems/number-of-islands/"
+    },
+    {
+        "name": "Group Anagrams",
+        "difficulty": "Medium",
+        "topic": "String",
+        "pattern": "Hashing",
+        "status": "Unsolved",
+        "link": "https://leetcode.com/problems/group-anagrams/"
+    },
+    {
+        "name": "Longest Consecutive Sequence",
+        "difficulty": "Medium",
+        "topic": "Array",
+        "pattern": "Hashing",
+        "status": "Unsolved",
+        "link": "https://leetcode.com/problems/longest-consecutive-sequence/"
+    },
+    {
+        "name": "Set Matrix Zeroes",
+        "difficulty": "Medium",
+        "topic": "Array",
+        "pattern": "Matrix",
+        "status": "Unsolved",
+        "link": "https://leetcode.com/problems/set-matrix-zeroes/"
+    },
+    {
+        "name": "Spiral Matrix",
+        "difficulty": "Medium",
+        "topic": "Array",
+        "pattern": "Matrix",
+        "status": "Unsolved",
+        "link": "https://leetcode.com/problems/spiral-matrix/"
+    },
+    {
+        "name": "Subarray Sum Equals K",
+        "difficulty": "Medium",
+        "topic": "Array",
+        "pattern": "Prefix Sum",
+        "status": "Unsolved",
+        "link": "https://leetcode.com/problems/subarray-sum-equals-k/"
+    },
+    {
+        "name": "Word Ladder",
+        "difficulty": "Hard",
+        "topic": "Graph",
+        "pattern": "BFS",
+        "status": "Unsolved",
+        "link": "https://leetcode.com/problems/word-ladder/"
+    },
+    {
+        "name": "Edit Distance",
+        "difficulty": "Hard",
+        "topic": "Dynamic Programming",
+        "pattern": "DP",
+        "status": "Unsolved",
+        "link": "https://leetcode.com/problems/edit-distance/"
+    }
+]
