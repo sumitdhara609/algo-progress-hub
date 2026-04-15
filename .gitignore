@@ -1,3 +1,10 @@
-data.json
-streak.txt
+# Ignore Python cache
 __pycache__/
+*.pyc
+
+# Ignore runtime/personal data
+streak.txt
+
+# Ignore system files (optional but good)
+.DS_Store
+Thumbs.db
