@@ -147,3 +147,7 @@ Most students solve problems randomly and lose track of their progress.
 This project is open-source under the  **MIT License.**
 
 #### © 2026 Sumit Dhara. All rights reserved.
+
+---
+
+## ⭐ If you found this useful, consider giving a star!
