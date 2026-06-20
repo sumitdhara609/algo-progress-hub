@@ -347,3 +347,206 @@ tr:last-child td {
     padding: 28px 0;
   }
 }
+.add-form {
+  display: grid;
+  gap: 22px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.form-grid label {
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.form-grid input,
+.form-grid select {
+  width: 100%;
+  border: 1px solid var(--border);
+  outline: none;
+  border-radius: 14px;
+  padding: 14px 15px;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.07);
+  font: inherit;
+}
+
+.form-grid input::placeholder {
+  color: rgba(159, 178, 199, 0.55);
+}
+
+.form-grid input:focus,
+.form-grid select:focus {
+  border-color: rgba(79, 209, 255, 0.65);
+  box-shadow: 0 0 0 4px rgba(79, 209, 255, 0.11);
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.form-actions button {
+  border: 0;
+  border-radius: 999px;
+  padding: 13px 22px;
+  color: #04111f;
+  background: linear-gradient(90deg, var(--accent), var(--green));
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.form-actions button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.form-actions span {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.delete-button {
+  border: 1px solid rgba(255, 138, 138, 0.35);
+  border-radius: 999px;
+  padding: 8px 14px;
+  color: #ff9b9b;
+  background: rgba(255, 138, 138, 0.12);
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.delete-button:hover {
+  background: rgba(255, 138, 138, 0.22);
+}
+
+.filter-bar {
+  display: grid;
+  grid-template-columns: 1fr 180px 180px;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.filter-bar input,
+.filter-bar select {
+  width: 100%;
+  border: 1px solid var(--border);
+  outline: none;
+  border-radius: 14px;
+  padding: 13px 14px;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.07);
+  font: inherit;
+}
+
+.filter-bar input::placeholder {
+  color: rgba(159, 178, 199, 0.55);
+}
+
+.filter-bar input:focus,
+.filter-bar select:focus {
+  border-color: rgba(79, 209, 255, 0.65);
+  box-shadow: 0 0 0 4px rgba(79, 209, 255, 0.11);
+}
+
+@media (max-width: 900px) {
+  .filter-bar {
+    grid-template-columns: 1fr;
+  }
+}
+
+.table-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.edit-button {
+  border: 1px solid rgba(79, 209, 255, 0.35);
+  border-radius: 999px;
+  padding: 8px 14px;
+  color: var(--accent-strong);
+  background: rgba(79, 209, 255, 0.1);
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.edit-button:hover {
+  background: rgba(79, 209, 255, 0.18);
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(3, 7, 18, 0.72);
+  backdrop-filter: blur(14px);
+}
+
+.modal-card {
+  width: min(880px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  padding: 28px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.04)),
+    #0d1b2f;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.45);
+}
+
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.modal-header p {
+  margin: 0 0 8px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: -0.04em;
+}
+
+.modal-close {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  width: 38px;
+  height: 38px;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 24px;
+  cursor: pointer;
+}
