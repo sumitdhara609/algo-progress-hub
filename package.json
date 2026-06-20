@@ -1,0 +1,22 @@
+{
+  "name": "algo-progress-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A progress dashboard for tracking algorithm practice, goals, streaks, and consistency.",
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^16.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "26.0.0",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "latest",
+    "typescript": "6.0.3"
+  }
+}

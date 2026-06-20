@@ -5,7 +5,9 @@
         "topic": "Array",
         "pattern": "Hashing",
         "status": "Solved",
-        "link": "https://leetcode.com/problems/two-sum/"
+        "link": "https://leetcode.com/problems/two-sum/",
+        "id": "two-sum",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Reverse Array",
@@ -13,7 +15,9 @@
         "topic": "Array",
         "pattern": "Basic",
         "status": "Solved",
-        "link": "Custom"
+        "link": "Custom",
+        "id": "reverse-array",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Palindrome String",
@@ -21,7 +25,9 @@
         "topic": "String",
         "pattern": "Two Pointer",
         "status": "Solved",
-        "link": "Custom"
+        "link": "Custom",
+        "id": "palindrome-string",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Fibonacci Series",
@@ -29,7 +35,9 @@
         "topic": "Recursion",
         "pattern": "Recursion",
         "status": "Solved",
-        "link": "Custom"
+        "link": "Custom",
+        "id": "fibonacci-series",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Find Maximum Element in Array",
@@ -37,7 +45,9 @@
         "topic": "Array",
         "pattern": "Basic",
         "status": "Solved",
-        "link": "Custom"
+        "link": "Custom",
+        "id": "find-maximum-element-in-array",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Binary Search",
@@ -45,7 +55,9 @@
         "topic": "Searching",
         "pattern": "Binary Search",
         "status": "Solved",
-        "link": "https://leetcode.com/problems/binary-search/"
+        "link": "https://leetcode.com/problems/binary-search/",
+        "id": "binary-search",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Longest Substring Without Repeating Characters",
@@ -53,7 +65,9 @@
         "topic": "String",
         "pattern": "Sliding Window",
         "status": "Revision",
-        "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+        "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+        "id": "longest-substring-without-repeating-characters",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Move Zeroes",
@@ -61,7 +75,9 @@
         "topic": "Array",
         "pattern": "Two Pointer",
         "status": "Solved",
-        "link": "https://leetcode.com/problems/move-zeroes/"
+        "link": "https://leetcode.com/problems/move-zeroes/",
+        "id": "move-zeroes",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Valid Palindrome",
@@ -69,7 +85,9 @@
         "topic": "String",
         "pattern": "Two Pointer",
         "status": "Solved",
-        "link": "https://leetcode.com/problems/valid-palindrome/"
+        "link": "https://leetcode.com/problems/valid-palindrome/",
+        "id": "valid-palindrome",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Merge Sorted Array",
@@ -77,7 +95,9 @@
         "topic": "Array",
         "pattern": "Two Pointer",
         "status": "Solved",
-        "link": "https://leetcode.com/problems/merge-sorted-array/"
+        "link": "https://leetcode.com/problems/merge-sorted-array/",
+        "id": "merge-sorted-array",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Contains Duplicate",
@@ -85,7 +105,9 @@
         "topic": "Array",
         "pattern": "Hashing",
         "status": "Solved",
-        "link": "https://leetcode.com/problems/contains-duplicate/"
+        "link": "https://leetcode.com/problems/contains-duplicate/",
+        "id": "contains-duplicate",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Single Number",
@@ -93,7 +115,9 @@
         "topic": "Array",
         "pattern": "Bit Manipulation",
         "status": "Solved",
-        "link": "https://leetcode.com/problems/single-number/"
+        "link": "https://leetcode.com/problems/single-number/",
+        "id": "single-number",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Container With Most Water",
@@ -101,7 +125,9 @@
         "topic": "Array",
         "pattern": "Two Pointer",
         "status": "Revision",
-        "link": "https://leetcode.com/problems/container-with-most-water/"
+        "link": "https://leetcode.com/problems/container-with-most-water/",
+        "id": "container-with-most-water",
+        "created_at": "2026-04-14"
     },
     {
         "name": "3Sum",
@@ -109,7 +135,9 @@
         "topic": "Array",
         "pattern": "Two Pointer",
         "status": "Revision",
-        "link": "https://leetcode.com/problems/3sum/"
+        "link": "https://leetcode.com/problems/3sum/",
+        "id": "3sum",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Product of Array Except Self",
@@ -117,7 +145,9 @@
         "topic": "Array",
         "pattern": "Prefix Sum",
         "status": "Revision",
-        "link": "https://leetcode.com/problems/product-of-array-except-self/"
+        "link": "https://leetcode.com/problems/product-of-array-except-self/",
+        "id": "product-of-array-except-self",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Valid Parentheses",
@@ -125,7 +155,9 @@
         "topic": "Stack",
         "pattern": "Stack",
         "status": "Solved",
-        "link": "https://leetcode.com/problems/valid-parentheses/"
+        "link": "https://leetcode.com/problems/valid-parentheses/",
+        "id": "valid-parentheses",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Trapping Rain Water",
@@ -133,7 +165,9 @@
         "topic": "Array",
         "pattern": "Two Pointer",
         "status": "Unsolved",
-        "link": "https://leetcode.com/problems/trapping-rain-water/"
+        "link": "https://leetcode.com/problems/trapping-rain-water/",
+        "id": "trapping-rain-water",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Merge Intervals",
@@ -141,7 +175,9 @@
         "topic": "Array",
         "pattern": "Greedy",
         "status": "Unsolved",
-        "link": "https://leetcode.com/problems/merge-intervals/"
+        "link": "https://leetcode.com/problems/merge-intervals/",
+        "id": "merge-intervals",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Kadane's Algorithm",
@@ -149,7 +185,9 @@
         "topic": "Array",
         "pattern": "Prefix Sum",
         "status": "Solved",
-        "link": "Custom"
+        "link": "Custom",
+        "id": "kadanes-algorithm",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Maximum Subarray",
@@ -157,7 +195,9 @@
         "topic": "Array",
         "pattern": "Kadane",
         "status": "Solved",
-        "link": "https://leetcode.com/problems/maximum-subarray/"
+        "link": "https://leetcode.com/problems/maximum-subarray/",
+        "id": "maximum-subarray",
+        "created_at": "2026-04-14"
     },
     {
         "name": "House Robber",
@@ -165,7 +205,9 @@
         "topic": "Dynamic Programming",
         "pattern": "DP",
         "status": "Unsolved",
-        "link": "https://leetcode.com/problems/house-robber/"
+        "link": "https://leetcode.com/problems/house-robber/",
+        "id": "house-robber",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Coin Change",
@@ -173,7 +215,9 @@
         "topic": "Dynamic Programming",
         "pattern": "DP",
         "status": "Unsolved",
-        "link": "https://leetcode.com/problems/coin-change/"
+        "link": "https://leetcode.com/problems/coin-change/",
+        "id": "coin-change",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Minimum Window Substring",
@@ -181,7 +225,9 @@
         "topic": "String",
         "pattern": "Sliding Window",
         "status": "Unsolved",
-        "link": "https://leetcode.com/problems/minimum-window-substring/"
+        "link": "https://leetcode.com/problems/minimum-window-substring/",
+        "id": "minimum-window-substring",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Jump Game",
@@ -189,7 +235,9 @@
         "topic": "Array",
         "pattern": "Greedy",
         "status": "Unsolved",
-        "link": "https://leetcode.com/problems/jump-game/"
+        "link": "https://leetcode.com/problems/jump-game/",
+        "id": "jump-game",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Jump Game II",
@@ -197,7 +245,9 @@
         "topic": "Array",
         "pattern": "Greedy",
         "status": "Unsolved",
-        "link": "https://leetcode.com/problems/jump-game-ii/"
+        "link": "https://leetcode.com/problems/jump-game-ii/",
+        "id": "jump-game-ii",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Daily Temperatures",
@@ -205,7 +255,9 @@
         "topic": "Stack",
         "pattern": "Monotonic Stack",
         "status": "Unsolved",
-        "link": "https://leetcode.com/problems/daily-temperatures/"
+        "link": "https://leetcode.com/problems/daily-temperatures/",
+        "id": "daily-temperatures",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Largest Rectangle in Histogram",
@@ -213,7 +265,9 @@
         "topic": "Stack",
         "pattern": "Monotonic Stack",
         "status": "Unsolved",
-        "link": "https://leetcode.com/problems/largest-rectangle-in-histogram/"
+        "link": "https://leetcode.com/problems/largest-rectangle-in-histogram/",
+        "id": "largest-rectangle-in-histogram",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Longest Increasing Subsequence",
@@ -221,7 +275,9 @@
         "topic": "Dynamic Programming",
         "pattern": "DP",
         "status": "Unsolved",
-        "link": "https://leetcode.com/problems/longest-increasing-subsequence/"
+        "link": "https://leetcode.com/problems/longest-increasing-subsequence/",
+        "id": "longest-increasing-subsequence",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Number of Islands",
@@ -229,7 +285,9 @@
         "topic": "Graph",
         "pattern": "DFS",
         "status": "Unsolved",
-        "link": "https://leetcode.com/problems/number-of-islands/"
+        "link": "https://leetcode.com/problems/number-of-islands/",
+        "id": "number-of-islands",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Group Anagrams",
@@ -237,7 +295,9 @@
         "topic": "String",
         "pattern": "Hashing",
         "status": "Unsolved",
-        "link": "https://leetcode.com/problems/group-anagrams/"
+        "link": "https://leetcode.com/problems/group-anagrams/",
+        "id": "group-anagrams",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Longest Consecutive Sequence",
@@ -245,7 +305,9 @@
         "topic": "Array",
         "pattern": "Hashing",
         "status": "Unsolved",
-        "link": "https://leetcode.com/problems/longest-consecutive-sequence/"
+        "link": "https://leetcode.com/problems/longest-consecutive-sequence/",
+        "id": "longest-consecutive-sequence",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Set Matrix Zeroes",
@@ -253,7 +315,9 @@
         "topic": "Array",
         "pattern": "Matrix",
         "status": "Unsolved",
-        "link": "https://leetcode.com/problems/set-matrix-zeroes/"
+        "link": "https://leetcode.com/problems/set-matrix-zeroes/",
+        "id": "set-matrix-zeroes",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Spiral Matrix",
@@ -261,7 +325,9 @@
         "topic": "Array",
         "pattern": "Matrix",
         "status": "Unsolved",
-        "link": "https://leetcode.com/problems/spiral-matrix/"
+        "link": "https://leetcode.com/problems/spiral-matrix/",
+        "id": "spiral-matrix",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Subarray Sum Equals K",
@@ -269,7 +335,9 @@
         "topic": "Array",
         "pattern": "Prefix Sum",
         "status": "Unsolved",
-        "link": "https://leetcode.com/problems/subarray-sum-equals-k/"
+        "link": "https://leetcode.com/problems/subarray-sum-equals-k/",
+        "id": "subarray-sum-equals-k",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Word Ladder",
@@ -277,7 +345,9 @@
         "topic": "Graph",
         "pattern": "BFS",
         "status": "Unsolved",
-        "link": "https://leetcode.com/problems/word-ladder/"
+        "link": "https://leetcode.com/problems/word-ladder/",
+        "id": "word-ladder",
+        "created_at": "2026-04-14"
     },
     {
         "name": "Edit Distance",
@@ -285,6 +355,8 @@
         "topic": "Dynamic Programming",
         "pattern": "DP",
         "status": "Unsolved",
-        "link": "https://leetcode.com/problems/edit-distance/"
+        "link": "https://leetcode.com/problems/edit-distance/",
+        "id": "edit-distance",
+        "created_at": "2026-04-14"
     }
 ]
