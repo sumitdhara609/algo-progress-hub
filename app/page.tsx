@@ -349,11 +349,16 @@ export default function Home() {
         </>
       )}
 
-      <EditProblemModal
-        problem={editingProblem}
-        onClose={() => setEditingProblem(null)}
-        onProblemUpdated={loadDashboardData}
-      />
-    </main>
+      <footer className="site-footer">
+  <p>Built and maintained by</p>
+  <strong>Sumit Dhara</strong>
+</footer>
+
+<EditProblemModal
+  problem={editingProblem}
+  onClose={() => setEditingProblem(null)}
+  onProblemUpdated={loadDashboardData}
+/>
+</main>
   );
 }
