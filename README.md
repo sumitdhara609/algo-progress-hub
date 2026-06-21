@@ -62,15 +62,15 @@ The project began as a small CLI utility and gradually became a more polished da
 
 ## 🧭 Development Story
 
-Algo Progress Hub is personally meaningful because it was my first GitHub repository.
+*Algo Progress Hub is personally meaningful because it was my first GitHub repository.*
 
-I started building the first version in early 2025 as a part-time personal tool to track my own DSA practice. The original version was a Python CLI app using JSON-based storage. I worked on it consistently for around two months, roughly 10 hours per week, for an estimated total of about 80 hours.
+I started building the first version in **early 2025** as a part-time personal tool to track my own DSA practice. The original version was a Python CLI app using JSON-based storage. I worked on it consistently for around two months, roughly 10 hours per week, for an estimated total of about 80 hours.
 
 On **10 April 2026**, I pushed it to GitHub as my first public repository.
 
 Later, I revisited the project and upgraded it from a basic CLI tracker into a web-based dashboard. Around **20 June 2026**, I connected Supabase and deployed the project on Vercel so the progress data could be displayed cleanly through a live public interface.
 
-This project is not just about DSA tracking. It represents the beginning of my developer journey — the first system I built, improved, deployed, and shaped into something presentable.
+This project is not just about DSA tracking. **It represents the beginning of my developer journey** — the first system I built, improved, deployed, and shaped into something presentable.
 
 ---
 
@@ -368,9 +368,9 @@ At that time, the goal was simple: stay consistent with algorithm practice and s
 
 But over time, it became more than that.
 
-It became my first GitHub repository, my first structured developer project, my first step toward building systems instead of just writing isolated code.
+**It became my first GitHub repository, my first structured developer project, my first step toward building systems instead of just writing isolated code.**
 
-The project reminds me that even a small CLI script can become something meaningful when it is improved patiently.
+*The project reminds me that even a small CLI script can become something meaningful when it is improved patiently.*
 
 ---
 
