@@ -2,8 +2,6 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-import AddProblemForm from "../components/AddProblemForm";
-import EditProblemModal from "../components/EditProblemModal";
 import ProblemTable, { Problem } from "../components/ProblemTable";
 import ProgressBar from "../components/ProgressBar";
 import StatCard from "../components/StatCard";
@@ -45,7 +43,6 @@ export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
   const [difficultyFilter, setDifficultyFilter] = useState("All");
   const [statusFilter, setStatusFilter] = useState("All");
-  const [editingProblem, setEditingProblem] = useState<Problem | null>(null);
 
   async function loadDashboardData() {
     setLoading(true);
@@ -84,26 +81,6 @@ export default function Home() {
     setStreak(streakData as StreakSettings);
 
     setLoading(false);
-  }
-
-  async function deleteProblem(id: string) {
-    const confirmDelete = window.confirm(
-      "Are you sure you want to delete this problem?"
-    );
-
-    if (!confirmDelete) {
-      return;
-    }
-
-    const { error } = await supabase.from("problems").delete().eq("id", id);
-
-    if (error) {
-      console.error("Delete error:", error);
-      alert("Something went wrong while deleting the problem.");
-      return;
-    }
-
-    await loadDashboardData();
   }
 
   useEffect(() => {
@@ -184,10 +161,6 @@ export default function Home() {
         </section>
       ) : (
         <>
-          <section className="panel">
-            <AddProblemForm onProblemAdded={loadDashboardData} />
-          </section>
-
           <section className="stats-grid">
             <StatCard
               label="Total Problems"
@@ -312,6 +285,11 @@ export default function Home() {
               </span>
             </div>
 
+            <div className="read-only-note">
+              This public dashboard is read-only. Search and filters are enabled
+              for exploration, while editing access is restricted.
+            </div>
+
             <div className="filter-bar">
               <input
                 value={searchTerm}
@@ -340,25 +318,15 @@ export default function Home() {
               </select>
             </div>
 
-            <ProblemTable
-              problems={filteredProblems}
-              onDeleteProblem={deleteProblem}
-              onEditProblem={setEditingProblem}
-            />
+            <ProblemTable problems={filteredProblems} />
           </section>
         </>
       )}
 
       <footer className="site-footer">
-  <p>Built and maintained by</p>
-  <strong>Sumit Dhara</strong>
-</footer>
-
-<EditProblemModal
-  problem={editingProblem}
-  onClose={() => setEditingProblem(null)}
-  onProblemUpdated={loadDashboardData}
-/>
-</main>
+        <p>Built and maintained by</p>
+        <strong>Sumit Dhara</strong>
+      </footer>
+    </main>
   );
 }

@@ -11,8 +11,6 @@ export type Problem = {
 
 type ProblemTableProps = {
   problems: Problem[];
-  onDeleteProblem: (id: string) => void;
-  onEditProblem: (problem: Problem) => void;
 };
 
 function getStatusClass(status: string) {
@@ -23,11 +21,7 @@ function hasValidLink(link: string) {
   return link && link !== "Custom" && link.startsWith("http");
 }
 
-export default function ProblemTable({
-  problems,
-  onDeleteProblem,
-  onEditProblem,
-}: ProblemTableProps) {
+export default function ProblemTable({ problems }: ProblemTableProps) {
   if (problems.length === 0) {
     return (
       <div className="empty-state">
@@ -48,7 +42,6 @@ export default function ProblemTable({
             <th>Pattern</th>
             <th>Status</th>
             <th>Link</th>
-            <th>Action</th>
           </tr>
         </thead>
 
@@ -72,25 +65,6 @@ export default function ProblemTable({
                 ) : (
                   <span className="muted">Custom</span>
                 )}
-              </td>
-              <td>
-                <div className="table-actions">
-                  <button
-                    type="button"
-                    className="edit-button"
-                    onClick={() => onEditProblem(problem)}
-                  >
-                    Edit
-                  </button>
-
-                  <button
-                    type="button"
-                    className="delete-button"
-                    onClick={() => onDeleteProblem(problem.id)}
-                  >
-                    Delete
-                  </button>
-                </div>
               </td>
             </tr>
           ))}
